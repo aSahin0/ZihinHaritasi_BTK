@@ -1,26 +1,42 @@
-🤖 Yapay Zeka Destekli Diyalogsal Ürün Öneri Sistemi
-Kullanıcıların niyetlerini, duygularını ve problemlerini anlayarak onlara anlamlı ve kişiselleştirilmiş ürün önerileri sunan akıllı bir alışveriş asistanı.
+# 🤖 Yapay Zeka Destekli Diyalogsal Ürün Öneri Sistemi
 
-Python Neo4j Google Gemini Lisans: MIT
+Bu proje, Python ile geliştirilmiş **Yapay Zeka Destekli Diyalogsal Ürün Öneri Sistemi** uygulamasıdır. Kullanıcının doğal dildeki taleplerini anlayarak, sadece anahtar kelimelere değil, aynı zamanda kullanıcının niyetine, duygularına ve çözmek istediği problemlere dayalı olarak anlamlı ürün önerileri sunar.
 
---- ## ✨ Temel Yetenekler
-🧠 Derin Anlam Çıkarma
-Kullanıcının "huzurlu bir ortam istiyorum" gibi soyut veya "uykusuzluk çekiyorum" gibi problem odaklı ifadelerinden yola çıkarak asıl ihtiyacını anlar.
+## 🎯 Özellikler
+- ✅ **Diyalogsal Anlama**: Kullanıcının "huzurlu bir ortam istiyorum" gibi soyut veya "uykusuzluk çekiyorum" gibi problem odaklı ifadelerini anlar.
+- ✅ **Anlamsal Ürün Önerisi**: Sadece anahtar kelimeye değil, anlam ve niyete dayalı öneriler sunar.
+- ✅ **Bilgi Grafiği (Knowledge Graph)**: Neo4j üzerinde modellenen ürünler ve kavramlar arasındaki derin ilişkileri kullanarak sorgulama yapar.
+- ✅ **Akıllı İlişki Analizi**: `İYİ_GİDER` (tamamlayıcı ürün) ve `ÇÖZÜM_OLABİLİR` (problem çözme) gibi özel ilişkilerle çapraz satış ve çözüm odaklı öneriler sunar.
+- ✅ **Dinamik Diyalog Yönetimi**: Google Gemini API ile akıllı takip soruları üreterek kullanıcıyı daha iyi anlamaya yönelik bir diyalog akışı sağlar.
 
-🕸️ Bilgi Grafiği (Knowledge Graph)
-Ürünler, kavramlar ve aralarındaki karmaşık ilişkiler Neo4j graf veritabanı üzerinde modellenmiştir. Bu yapı, derin ve anlamsal sorgulara olanak tanır.
+## 🔧 Kullanılan Teknolojiler
+- **Python**: Proje dili
+- **Neo4j**: Graf Veritabanı
+- **Google Gemini API**: Doğal Dil Anlama (NLU) ve Diyalog Yönetimi
+- **py2neo**: Neo4j veritabanı bağlantısı
+- **pandas**: Veri işleme
+- **google-generativeai**: Google Gemini API etkileşimi
 
-🔗 Akıllı İlişki Analizi
-İYİ_GİDER ve ÇÖZÜM_OLABİLİR gibi özel ilişkiler sayesinde, sadece alakalı değil, aynı zamanda birbirini tamamlayan veya belirli bir soruna çözüm olan ürünler önerir.
+## 🚀 Nasıl Kullanılır
+1. Projeyi klonlayın:
+   ```bash
+   git clone [https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ.git](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ.git)
+   ```
+2. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Uygulamayı başlatın:
+   ```bash
+   python app.py
+   ```
+4. Konsol üzerinden asistanla etkileşime geçerek taleplerinizi iletin.
 
-💬 Diyalogsal Etkileşim
-Google Gemini API kullanarak, önerileri daraltmak ve kullanıcıyı daha iyi anlamak için bağlama uygun, akıllı takip soruları üretir. Statik bir arama motoru değil, dinamik bir diyalog partneridir.
+## 💡 Katkıda Bulunma
+Katkıda bulunmak için pull request gönderebilir veya önerilerinizi "issue" olarak açabilirsiniz. Her türlü geri bildirim memnuniyetle karşılanır!
 
---- ## 🛠️ Teknoloji Mimarisi
-| Bileşen | Teknoloji | Açıklama | | ------------------ | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | | **Ana Dil** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Tüm sistem mantığını ve iş akışını yönetir. | | **Veritabanı** | ![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=flat&logo=neo4j&logoColor=white) | Ürünler ve kavramlar arasındaki zengin, anlamsal ilişkileri depolar. | | **Yapay Zeka** | ![Google Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=flat&logo=google&logoColor=white) | Doğal Dil Anlama (NLU) ve diyalog yönetimi görevlerini üstlenir. | | **Kütüphaneler** | `py2neo`, `pandas`, `google-generativeai` | Veritabanı bağlantısı, veri işleme ve API etkileşimi için kullanılır. |
---- ## 🚀 Projeyi Başlatma
-➡️ Kurulum Adımları için Tıklayın
+## 📧 İletişim
+Herhangi bir sorunuz veya öneriniz varsa benimle GitHub üzerinden iletişime geçebilirsiniz.
 
-▶️ Projeyi Çalıştırma
---- ## 📈 Gelecek Geliştirmeler - [ ] **Kullanıcı Profilleri:** Her kullanıcı için bir profil oluşturarak geçmiş tercihlerine ve davranışlarına göre daha derin kişiselleştirme sağlamak. - [ ] **Esnek Diyalog Yönetimi:** Kullanıcının mevcut önerileri daraltmasına ("daha ucuz olanları göster") veya karşılaştırma yapmasına olanak tanımak. - [ ] **Görsel Entegrasyon:** Ürün önerileriyle birlikte `image_url` kullanarak görsellerini de göstermek. - [ ] **Web Arayüzü:** Projeyi bir web arayüzü (Flask veya FastAPI ile) üzerinden sunmak. --- ## 🤝 Katkıda Bulunma Katkılarınız projenin gelişimi için çok değerlidir! Lütfen bir "issue" açarak veya "pull request" göndererek katkıda bulunun. 1. Projeyi Fork'layın. 2. Yeni bir özellik dalı oluşturun (`git checkout -b ozellik/HarikaBirOzellik`). 3. Değişikliklerinizi Commit'leyin (`git commit -m 'Harika bir özellik eklendi'`). 4. Dalınızı Push'layın (`git push origin ozellik/HarikaBirOzellik`). 5. Bir Pull Request açın. ---
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
+---
+🖋️ **Akıllı Alışveriş Asistanınızla Tanışın ve Keyifli Kodlamalar!**
