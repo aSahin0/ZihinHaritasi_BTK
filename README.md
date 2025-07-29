@@ -1,29 +1,53 @@
+<div align="center">
+
 🤖 Yapay Zeka Destekli Diyalogsal Ürün Öneri Sistemi
-Bu proje, standart anahtar kelime tabanlı aramaların ötesine geçerek, kullanıcıların niyetlerini, duygularını ve çözmek istedikleri problemleri anlayarak onlara anlamlı ve kişiselleştirilmiş ürün önerileri sunan akıllı bir alışveriş asistanıdır.
+Kullanıcıların niyetlerini, duygularını ve problemlerini anlayarak onlara anlamlı ve kişiselleştirilmiş ürün önerileri sunan akıllı bir alışveriş asistanı.
+
+</div>
+
+<div align="center">
+
+</div>
+
+Bu proje, standart anahtar kelime tabanlı aramaların ötesine geçerek, bir kullanıcının "huzurlu bir ortam istiyorum" gibi soyut veya "uykusuzluk çekiyorum" gibi problem odaklı ifadelerinden yola çıkarak asıl ihtiyacını anlayan ve buna yönelik öneriler sunan bir sistemdir.
 
 🌟 Temel Yetenekler
-Derin Anlam Çıkarma: Kullanıcının "huzurlu bir ortam istiyorum" gibi soyut veya "uykusuzluk çekiyorum" gibi problem odaklı ifadelerinden yola çıkarak asıl ihtiyacını anlar.
+🧠 Derin Anlam Çıkarma: Kullanıcı girdilerindeki soyut kavramları ve problemleri anlar.
 
-Bilgi Grafiği (Knowledge Graph) Mimarisi: Ürünler, kavramlar (duygular, stiller, sorunlar) ve aralarındaki karmaşık ilişkiler Neo4j graf veritabanı üzerinde modellenmiştir.
+🕸️ Bilgi Grafiği (Knowledge Graph) Mimarisi: Ürünler, kavramlar ve aralarındaki karmaşık ilişkiler Neo4j graf veritabanı üzerinde modellenmiştir.
 
-Akıllı İlişki Analizi:
+🔗 Akıllı İlişki Analizi:
 
 İYİ_GİDER: Birbiriyle uyumlu ürünleri önererek çapraz satış fırsatları yaratır.
 
 ÇÖZÜM_OLABİLİR: Belirli bir probleme çözüm sunan ürünleri doğrudan hedefler.
 
-Diyalogsal Etkileşim: Google Gemini API kullanarak, önerileri daraltmak ve kullanıcıyı daha iyi anlamak için bağlama uygun, akıllı takip soruları üretir.
+💬 Diyalogsal Etkileşim: Google Gemini API kullanarak, önerileri daraltmak ve kullanıcıyı daha iyi anlamak için bağlama uygun, akıllı takip soruları üretir.
 
 🛠️ Teknoloji Yığını
-Ana Dil: Python 3.x
+Bileşen
 
-Veritabanı: Neo4j (Graf Veritabanı)
+Teknoloji
 
-Yapay Zeka & NLU: Google Gemini API
+Ana Dil
 
-Kütüphaneler: py2neo, pandas, google-generativeai
 
-⚙️ Sistem Nasıl Çalışır?
+
+Veritabanı
+
+
+
+Yapay Zeka
+
+
+
+Kütüphaneler
+
+py2neo, pandas, google-generativeai
+
+⚙️ Sistem Mimarisi
+Sistem, kullanıcının girdisinden nihai öneriye giden yolda aşağıdaki adımları izler:
+
 Girdi: Kullanıcı, doğal dilde bir istek girer (örn: "uyumama yardımcı olacak bir şeyler arıyorum").
 
 Anlama (NLU): Kullanıcının girdisi, kavramları (Uykusuzluk), niyeti (problem_çözme) ve duyguyu çıkarmak üzere Google Gemini API'ye gönderilir.
@@ -66,7 +90,7 @@ Gerekli Kütüphaneleri Yükleyin:
 
 pip install -r requirements.txt
 
-(Not: Henüz bir requirements.txt dosyanız yoksa, pip freeze > requirements.txt komutuyla oluşturabilirsiniz.)
+Not: Henüz bir requirements.txt dosyanız yoksa, sanal ortam aktifken pip freeze > requirements.txt komutuyla oluşturabilirsiniz.
 
 Neo4j Veritabanını Başlatın (Docker ile):
 
@@ -101,3 +125,19 @@ Sistem sizi bir "Merhaba!" mesajıyla karşılayacak ve sizden ilk isteğinizi g
 [ ] Görsel Entegrasyon: Ürün önerileriyle birlikte image_url kullanarak görsellerini de göstermek.
 
 [ ] Web Arayüzü: Projeyi bir web arayüzü (Flask veya FastAPI ile) üzerinden sunmak.
+
+🤝 Katkıda Bulunma
+Katkılarınız projenin gelişimi için çok değerlidir! Lütfen bir "issue" açarak veya "pull request" göndererek katkıda bulunun.
+
+Projeyi Fork'layın.
+
+Yeni bir özellik dalı oluşturun (git checkout -b ozellik/HarikaBirOzellik).
+
+Değişikliklerinizi Commit'leyin (git commit -m 'Harika bir özellik eklendi').
+
+Dalınızı Push'layın (git push origin ozellik/HarikaBirOzellik).
+
+Bir Pull Request açın.
+
+📄 Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
