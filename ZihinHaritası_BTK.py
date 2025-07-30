@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
 import os
 
-# --- 1. Veri Tanımlamaları (Değişiklik yok) ---
+
 
 products_data = {
     'product_id': ['P001', 'P002', 'P003', 'P004', 'P005', 'P006', 'P007', 'P008', 'P009', 'P010', 'P011', 'P012'],
@@ -109,7 +109,7 @@ relationships_data = [
     ("Sedir Ağacı Tütsü Koku Kartı", "SAHİPTİR", "Odunsu Koku", {"type": "koku_profili"}), ("Sedir Ağacı Tütsü Koku Kartı", "SAHİPTİR", "Koku Kartı", {"type": "form"}),
 ]
 
-# --- 2. Neo4j Veri Aktarımı (Değişiklik yok) ---
+# --- 2. Neo4j Veri Aktarımı
 def import_data_to_neo4j_for_testing_updated(products_df, concepts, relationships_data, graph_conn):
     try:
         graph_conn.run("MATCH (n) DETACH DELETE n")
@@ -151,7 +151,7 @@ def import_data_to_neo4j_for_testing_updated(products_df, concepts, relationship
     return True
 
 
-# --- 3. Doğal Dil Anlama (NLU) Modülü (Değişiklik yok) ---
+# --- 3. Doğal Dil Anlama (NLU) Modülü  ---
 try:
     genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
     gemini_model = genai.GenerativeModel('models/gemini-2.5-pro')
