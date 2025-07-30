@@ -1,0 +1,8 @@
+pandas
+py2neo
+json
+re
+TfidVectorizer
+cosine_similarity
+Google.generativeai
+os
